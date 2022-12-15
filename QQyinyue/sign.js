@@ -39,7 +39,8 @@ function get_array_32(md5_offset_array) {
             b_1 = md5_offset_array[a] * 16,
             b_2 = b_1 + md5_offset_array[a + 1],
             b = b_2 ^ offset_array[i];
-        result_array.push(b, b)
+        // 
+        result_array.push(b)
     }
     return result_array
 }
